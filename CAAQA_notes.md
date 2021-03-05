@@ -19,4 +19,4 @@
   - the limits to multiprocessing to achiveve Amdahl's Law
 casued improvements in processor performance to slow down, that is, to ***double every 20 years***, rather than every 1.5 years as it did between 1986 and 2003.
 ***The only path left to improve energy-performance-cost is specialization.***
--This text is about the architectural ideas and accompanying ***compiler*** improvements that made the incrdible growth rate possible over the past century, the reasons for the dramatic change, and the challenges and initial promising approaches to architectural ideas, ***compilers***, and ***interpreters*** for the 21st cenruty.
+- This text is about the architectural ideas and accompanying ***compiler*** improvements that made the incrdible growth rate possible over the past century, the reasons for the dramatic change, and the challenges and initial promising approaches to architectural ideas, ***compilers***, and ***interpreters*** for the 21st cenruty.
