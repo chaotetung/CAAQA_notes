@@ -34,3 +34,5 @@
   2. *Vector architectures, graphic processor units(GPUs), and multimedia instruction sets* exploit data-level parallelism by applying a single instruction to a collection of data in parallel.
   3. *Thread-level parallelism* exploits either data-level parallelism or task-level parallelism in a tightly coupled hardware model that allows for interaction between parallel threads.
   4. *Request-level parallelism* exploits parallelism among largely decoupled tasks specified by the programmer or the operating system.
+## 1.3 Defining Computer Architecture
+**
