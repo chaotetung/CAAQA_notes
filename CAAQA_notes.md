@@ -21,3 +21,16 @@
   casued improvements in processor performance to slow down, that is, to ***double every 20 years***, rather than every 1.5 years as it did between 1986 and 2003.
   ***The only path left to improve energy-performance-cost is specialization.***
 - This text is about the architectural ideas and accompanying ***compiler*** improvements that made the incrdible growth rate possible over the past century, the reasons for the dramatic change, and the challenges and initial promising approaches to architectural ideas, ***compilers***, and ***interpreters*** for the 21st cenruty.
+## 1.2 Classes of Computers
+**Desktop Computing**
+- Desktop computing can be resonably well charaterized in terms of applications and benchmarking, though the increasing use of web-centric, interactive applications poses new challenges in performance evaluation.
+
+**Classes of Parallelism and Parallel Architectures**
+- There are basically two kinds of parallelism in applications:
+  1. *Data-level parallelism(DLP)* arises because there are many data items that can be operated on at the same time.
+  2. *Task-level parallelism(TLP)* arises because tasks of work are created that can operate independently and largely in parallel.
+- Computer hardware in turn can exploit these two kinds of application parallelism in four major ways:
+  1. *Instruction-level parallelism* exploits data-level parallelism at modest levels with compiler help using ideas like pipelining and at medium levels using ideas like speculative execution.
+  2. *Vector architectures, graphic processor units(GPUs), and multimedia instruction sets* exploit data-level parallelism by applying a single instruction to a collection of data in parallel.
+  3. *Thread-level parallelism* exploits either data-level parallelism or task-level parallelism in a tightly coupled hardware model that allows for interaction between parallel threads.
+  4. *Request-level parallelism* exploits parallelism among largely decoupled tasks specified by the programmer or the operating system.
