@@ -34,5 +34,7 @@
   2. *Vector architectures, graphic processor units(GPUs), and multimedia instruction sets* exploit data-level parallelism by applying a single instruction to a collection of data in parallel.
   3. *Thread-level parallelism* exploits either data-level parallelism or task-level parallelism in a tightly coupled hardware model that allows for interaction between parallel threads.
   4. *Request-level parallelism* exploits parallelism among largely decoupled tasks specified by the programmer or the operating system.
-## 1.3 Defining Computer Architecture
-**
+## 1.3 Defining Computer Architecture  
+**Instruction Set Architecture: The Myopic View of Computer Architecture**
+Developed 30 years after the first RISC instruction sets, RISC-V inherits its ancestors' good ideas--a large set of registers, easy-to-pipeline instructions, and a lean set of operations--while avoiding their omissions or mistakes.
+1. Class of ISA--Nearly all ISAs today are classified as general-purpose register architectures, where the operands are either registers or memory locations. The two versions of this class are *register-memory* ISAs, such as the 80x86, which can access memory as part of many instructions, and *load-store* ISAs, such as ARMv8 and RISC-V, which can access memoryy only with load or store instructions. All ISAs announced since 1985 are load-store.
