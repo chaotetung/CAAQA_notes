@@ -35,6 +35,12 @@
   3. *Thread-level parallelism* exploits either data-level parallelism or task-level parallelism in a tightly coupled hardware model that allows for interaction between parallel threads.
   4. *Request-level parallelism* exploits parallelism among largely decoupled tasks specified by the programmer or the operating system.
 ## 1.3 Defining Computer Architecture  
-**Instruction Set Architecture: The Myopic View of Computer Architecture**
-Developed 30 years after the first RISC instruction sets, RISC-V inherits its ancestors' good ideas--a large set of registers, easy-to-pipeline instructions, and a lean set of operations--while avoiding their omissions or mistakes.
-1. Class of ISA--Nearly all ISAs today are classified as general-purpose register architectures, where the operands are either registers or memory locations. The two versions of this class are *register-memory* ISAs, such as the 80x86, which can access memory as part of many instructions, and *load-store* ISAs, such as ARMv8 and RISC-V, which can access memoryy only with load or store instructions. All ISAs announced since 1985 are load-store.
+**Instruction Set Architecture: The Myopic View of Computer Architecture**  
+- Developed 30 years after the first RISC instruction sets, RISC-V inherits its ancestors' good ideas--a large set of registers, easy-to-pipeline instructions, and a lean set of operations--while avoiding their omissions or mistakes.
+  1. **Class of ISA**--Nearly all ISAs today are classified as general-purpose register architectures, where the operands are either registers or memory locations. The two versions of this class are *register-memory* ISAs, such as the 80x86, which can access memory as part of many instructions, and *load-store* ISAs, such as ARMv8 and RISC-V, which can access memoryy only with load or store instructions. All ISAs announced since 1985 are load-store.
+  2. **Memory addressing**--Virtually all desktop and server computers, including the 80x86, ARMv8, and RISC-V, use byte addressing to access memory operands. Some architectures, like ARMv8, require that objects must be aligned. The 80x86 and RISC-V do not require alignment, but accesses are generally faster if operands are aligned.
+  3. **Addressing modes**--In addition to specifying registers and constant operands, addressing modes specify the address of a memory object. RISC-V addressing modes are Registers, Immediate(for constants), and displacement, where a constant offset is added to a register to form the memory address.
+  4. **Types and sizes of operands**
+  5. **Operations**--The general categories of operations are data transfer, arithmatic logical, control, and floating point.
+  6. **Control flow instructions**--Virtuall all ISAs, including these three, support conditional branches, unconditional jumps, procedure calls, and returns. 
+  7. **Encoding an ISA**--There are two basic choices on encoding: fixed length and variable length. All ARMv8 and RISC-V instructions are 32 bits long, which simplifies instruction decoding. The 80x86 encoding is variable length,ranging from 1 to 18 bytes. Variable 
