@@ -48,3 +48,23 @@
 **Genuine Computer Architecture: Designing the Organization and Hardware to Meet Goals and Functional Requirements**  
 - The implementation of a computer has two components: organization and hardware.
 - In this book, the word *architecture* covers all three aspects of computer design--instruction set architecture, organization or microarchitecture, and hardware.
+
+## 1.4 Trends in Technology  
+Five implementation technologies, which change at a dramatic pace, are critical to modern implementations:
+- **Integrated circuit logic technology**;
+- **Semiconductor DRAM**;
+- **Semicondutor Flash**;
+- **Magnetic disk technology**;
+- **Network technology**.  
+  
+### Performance Trends: Bandwidth Over Latency
+- **bandwidh** or **throughput** is the total amount of work done in a given time;
+- **latency** or **response time** is the time between the start and the completion of an event.  
+  
+A simple rule of thumb is that bandwidth grows by at least the square of the improvement in latency.
+### Scaling of Transistor Performance and Wires
+- As feature sizes shrink, devices shrink quadratically in the horizontal dimension and also shrink in the vertical dimension. The shrink in the veritical dimension requires a reduction in operating voltage to maintain correct operation and reliability of the transistors.
+- Although transistors generally improve in performance with decreased feature size, wires in an integrated circuit do not. In purticular, the signal delay for a wire increases in proportion to the product of its resistance and capacitance. Of course, as feature size shrinks, wires get shorter, but the resistance and capacitance per unit length get worse.
+- In addition to the power dissipation limit, wire delay has become a major design obstacle for large integrated circuits and is often more critical than transistor swithing delay. Larger and larger fractions of the clock cycle have been consumed by the propagation delay of signals on wires, **but power now plays an even greater role than delay**.
+
+## 1.5 Trends in Power and Energy in Integrated Circuits
